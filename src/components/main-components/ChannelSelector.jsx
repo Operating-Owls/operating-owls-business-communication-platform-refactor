@@ -22,7 +22,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
-import IndivChannel from '../IndivChannel';
+import IndivChannel from '../sub-components/IndividualChannel';
 //Channel Component displays selection of channels for viewing selection
 
 const Transition = React.forwardRef(function Transition(props, ref) {

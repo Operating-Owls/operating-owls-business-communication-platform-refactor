@@ -1,16 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './routes/Home'
-import ServerLayout from './layout/ServerLayout'
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./routes/Home";
+import ServerLayout from "./layout/ServerLayout";
+import { MyProvider } from "./DataContext";
 
 function About() {
-  return <div>About</div>
+  return <div>About</div>;
 }
 
 function App() {
   return (
-    <Router>
-      <Routes>
+    <MyProvider>
+      <Router>
+        <Routes>
           <Route path="/" element={<Home />}>
             <Route index element={<div>Home</div>} />
             <Route path="server/:serverId" element={<ServerLayout />}>
@@ -19,11 +20,11 @@ function App() {
             </Route>
             {/* more routes to come */}
           </Route>
-        <Route path="/login" element={<div>Login Please!</div>} />
-        
-      </Routes>
-    </Router>
-  )
+          <Route path="/login" element={<div>Login Please!</div>} />
+        </Routes>
+      </Router>
+    </MyProvider>
+  );
 }
 
-export default App
+export default App;

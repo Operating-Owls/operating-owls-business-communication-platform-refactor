@@ -2,7 +2,6 @@ import * as React from "react";
 import SearchBar from "./Search";
 import ProfileComponent from './ProfileComponent';
 
-
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -28,9 +27,12 @@ const Navbar = () => {
         position: "fixed",
         top: 0,
         width: "100%",
+        padding: "10px",
         zIndex: 1000 }
         }>
         <Toolbar>
+          <img src="./logo.png" alt="logo" style={{width: "40px"}}/>
+          
           <IconButton
             size="large"
             edge="start"

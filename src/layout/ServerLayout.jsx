@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom"
 export default function ServerLayout() {
     return (
         <>
-            <h1>Server</h1>
+            <ChannelSelector />
             <Outlet />
         </>
     )

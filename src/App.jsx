@@ -1,7 +1,7 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import AuthLayout from './layout/AuthLayout'
 import Home from './routes/Home'
+import ServerLayout from './layout/ServerLayout'
+
 
 function About() {
   return <div>About</div>
@@ -11,10 +11,14 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<AuthLayout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-        </Route>
+          <Route path="/" element={<Home />}>
+            <Route index element={<div>Home</div>} />
+            <Route path="server/:serverId" element={<ServerLayout />}>
+              <Route path="channel/:channelId" element={<h1>channel</h1>} />
+              {/* other server routes */}
+            </Route>
+            {/* more routes to come */}
+          </Route>
         <Route path="/login" element={<div>Login Please!</div>} />
         
       </Routes>

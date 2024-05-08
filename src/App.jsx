@@ -2,9 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AuthLayout from './layout/AuthLayout'
 import './App.css'
-function Home() {
-  return <div>Home</div>
-}
+import Home from './routes/Home'
 
 function About() {
   return <div>About</div>

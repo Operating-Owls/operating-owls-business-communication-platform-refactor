@@ -11,7 +11,7 @@ import AddIcon from '@mui/icons-material/Add';
 //import channelData from '../../data/channelData'
 //import channelData from '../../routes/ServerComponent/startingData.json'
 //import flatChannelData from '../../flatStartingData.json'
-import ModalInput from '../ModalInput';
+import MessageInput from '../sub-components/MessageInput';
 import ListItem from '@mui/material/ListItem';
 import IconButton from '@mui/material/IconButton';
 import { useMyContext } from '../../DataContext';
@@ -167,7 +167,7 @@ export default function Channels(props){
                     </List>
                 </nav>
             </Box>
-            {showModal && <ModalInput enteredId={'channelId'+ channels.channels.allIds.length} addItem={addItem} onClose={handleModalClose}/>}                
+            {showModal && <MessageInput enteredId={'channelId'+ channels.channels.allIds.length} addItem={addItem} onClose={handleModalClose}/>}                
         </>
     )
 }

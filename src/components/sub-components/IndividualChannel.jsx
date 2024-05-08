@@ -1,13 +1,9 @@
 import * as React from 'react';
-
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import TagIcon from '@mui/icons-material/Tag';
 import PropTypes from 'prop-types';
-import IconButton from '@mui/material/IconButton';
-import ListItem from '@mui/material/ListItem';
-import DeleteIcon from '@mui/icons-material/Delete';
+
+import { ListItem, ListItemButton, ListItemIcon, ListItemText, IconButton } from '@mui/material';
+import { TagIcon, DeleteIcon } from '@mui/icons-material';
+
 // import { useMyContext } from '../DataContext';
 IndivChannel.propTypes = {
     name: PropTypes.string.isRequired,

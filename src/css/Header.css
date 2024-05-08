@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8f8f8;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* optional: to ensure the navbar stays on top of other elements */
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-link {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-link:hover {
+  color: #666;
+}

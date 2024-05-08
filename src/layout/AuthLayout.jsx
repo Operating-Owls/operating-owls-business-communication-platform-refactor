@@ -7,6 +7,7 @@ const AuthLayout = () => {
             <Outlet />
         )
     }
+    
     return <Navigate to="/login" />;
 
     

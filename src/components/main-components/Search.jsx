@@ -3,6 +3,8 @@ import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import ClearIcon from '@mui/icons-material/Clear';
 
+import "../../css/SearchBar.css";
+
 export default function SearchBar(props) {
     const { searchValue, setSearchValue, handleSearchOpen } = props;
     const textFieldRef = React.useRef(null);
@@ -35,7 +37,6 @@ export default function SearchBar(props) {
                         <ClearIcon />
                     </IconButton>) : null
             }}
-            clearButton={false}
         />
     );
 }

@@ -14,7 +14,7 @@
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
-// import '../../css/ProfileComponent.css'
+import '../../css/ProfileComponent.css'
 
 import Badge from '@mui/material/Badge';
 import CircleIcon from '@mui/icons-material/Circle';

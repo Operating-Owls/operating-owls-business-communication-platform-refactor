@@ -9,8 +9,11 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 
+import "../../css/Navbar.css";
+
 const Navbar = () => {
   const [searchValue, setSearchValue] = React.useState("");
+  const [anchorEl, setAnchorEl] = React.useState(null);
   const handleSearchOpen = (event) => {
     setAnchorEl(event.currentTarget);
     //setForcePopover(true);
@@ -19,7 +22,14 @@ const Navbar = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" sx={{ backgroundColor: "white",
+        color: "#212121",
+        overflow: "hidden",
+        position: "fixed",
+        top: 0,
+        width: "100%",
+        zIndex: 1000 }
+        }>
         <Toolbar>
           <IconButton
             size="large"

@@ -1,8 +1,8 @@
 # Contributing to Collaboration Project
 
 ## Link To Design
-Figma Design Here
-
+[Figma Design Here
+](https://www.figma.com/file/j8lmKYVOW9XThjzethddd7/Business-Comms-Platform?type=design&node-id=69%3A46&mode=design&t=9veQELGUxsn4lWMd-1)
 
 ## How to Assign an Issue to Yourself
 

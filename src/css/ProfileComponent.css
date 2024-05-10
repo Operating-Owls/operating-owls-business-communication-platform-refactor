@@ -1,0 +1,59 @@
+/*this section is to undo all the inherited css for now*/
+.username, .email, .online, .offline {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.profile--component {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    padding: 6px;
+}
+
+.name--section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    padding-right: 3.5px;
+}
+
+.username {
+    font-size:16px;
+    font-weight: normal;
+}
+
+.email {
+    font-size:12px;
+    font-weight: normal;
+    color: #141415;
+}
+
+.menu--icon {
+    padding-right: 15px;
+}
+
+/* .icon--section {
+} */
+
+/*the background color here adds a dark circle around the status circle icon*/
+.online {
+    color: #44c91c;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius:50%;
+    border: 1px solid white; /* Adjust the border width and color as needed */
+    padding: .5px;
+}
+
+.offline {
+    color: #e12222;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius:50%;
+    border: 1px solid white; /* Adjust the border width and color as needed */
+    padding: .5px;
+}

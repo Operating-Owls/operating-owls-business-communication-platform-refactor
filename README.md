@@ -1,6 +1,15 @@
 # operating-owls-business-communication-platform-refactor
 This project is a web application based on discord.  It will have many of the same features, including servers, chanels, server roles, and real-time chat. 
 
+## Link To Design
+[figma design
+](https://www.figma.com/file/j8lmKYVOW9XThjzethddd7/Business-Comms-Platform?type=design&node-id=69-46&mode=design&t=CVyvN0sRjbo4Jt6B-0
+)
+
+## Link to Frontend Whimsical Board
+[flowchart](https://whimsical.com/operating-owls-front-end-app-outline-QsErtXmTXxiehW5NGqChW9
+)
+
 ## Prerequisites
 Ensure Node.js is installed on your machine.  If not, download and install the latest version [here](https://nodejs.org/en/download/).
 
@@ -23,9 +32,6 @@ npm install
 npm run dev
 ```
 6. Open a browser and navigate to `http://localhost:5173` to view the application.
-
-## Link To Design
-https://www.figma.com/file/j8lmKYVOW9XThjzethddd7/Business-Comms-Platform?type=design&node-id=69-46&mode=design&t=CVyvN0sRjbo4Jt6B-0
 
 ## How to Assign an Issue to Yourself
 
